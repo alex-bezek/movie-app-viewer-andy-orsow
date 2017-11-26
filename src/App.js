@@ -12,12 +12,12 @@ class App extends Component {
       <BrowserRouter>
         <div className="App-Screen">
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/movies' component={MoviesPage} />
+            <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+            <Route exact path={`${process.env.PUBLIC_URL}/movies`} component={MoviesPage} />
             { Movies.map(movie => (
               <Route
                 key={movie.path}
-                path={`/movies/${movie.path}`}
+                exact path={`${process.env.PUBLIC_URL}/movies/${movie.path}`}
                 render={(props) =>
                   <Movie
                     thumbNail={movie.thumbNail}
