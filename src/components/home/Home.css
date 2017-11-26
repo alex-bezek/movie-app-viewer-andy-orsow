@@ -14,7 +14,6 @@
   padding-right: 10px;
 }
 
-
 .Home-ProfilePic {
   height: 35px;
   width: 35px;
@@ -68,4 +67,20 @@
 
 .Home-Books {
   background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.Home-Movies--Pulse {
+  animation: pulse 0.75s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.00);
+  }
+  50% {
+        transform: scale(1.1);
+  }
+  100% {
+        transform: scale(1.0);
+  }
 }
