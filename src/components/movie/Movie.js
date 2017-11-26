@@ -5,7 +5,7 @@ import './Movie.css';
 
 export default ({ thumbNail, background, title, year, abstract}) => (
   <div className="Movie">
-    <Link to="/movies"  className="Movie-CloseButton-container" >
+    <Link to={`${process.env.PUBLIC_URL}/movies`}  className="Movie-CloseButton-container" >
       <img src={X} className="Movie-CloseButton" alt="close X button" />
     </Link>
     <div className="Movie-BackgroundImage-Container">

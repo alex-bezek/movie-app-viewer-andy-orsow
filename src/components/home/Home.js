@@ -10,7 +10,7 @@ export default () => (
       <img className="Home-ProfilePic" src={ProfilePic} alt="profile guy fox" />
     </div>
     <div className="Home-Categories">
-      <Link className="Home-Category Home-Movies" to="/movies">
+      <Link className="Home-Category Home-Movies" to={`${process.env.PUBLIC_URL}/movies`}>
         <h2>Movies</h2>
         <p>46 items</p>
       </Link>

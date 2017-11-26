@@ -15,7 +15,7 @@ export default () => (
       <h1>
         Movies
       </h1>
-      <Link to="/">
+      <Link to={`${process.env.PUBLIC_URL}/`}>
         <img src={X} className="Movies-CloseButton" alt="close X button" />
       </Link>
     </div>
@@ -27,16 +27,13 @@ export default () => (
       <div className="Movies-list-view">
         {
           netflix.map(movie => (
-            <Link to={`/movies/${movie.path}`} >
+            <Link to={`${process.env.PUBLIC_URL}/movies/${movie.path}`} >
               <img className="Movies-thumbnail" src={movie.thumbNail} alt={`thumbnail of ${movie.title}`} />
             </Link>
           ))
         }
       </div>
     </div>
-
-
-
 
     <br />
     <p>Amazon Prime Video - Watchlist</p>
@@ -44,7 +41,7 @@ export default () => (
       <div className="Movies-list-view">
         {
           amazon.map(movie => (
-            <Link to={`/movies/${movie.path}`} >
+            <Link to={`${process.env.PUBLIC_URL}/movies/${movie.path}`} >
               <img className="Movies-thumbnail" src={movie.thumbNail} alt={`thumbnail of ${movie.title}`} />
             </Link>
           ))
@@ -52,6 +49,4 @@ export default () => (
       </div>
     </div>
   </div>
-
-
 );
