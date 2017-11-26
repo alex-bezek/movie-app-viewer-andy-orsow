@@ -26,7 +26,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 355px;
+  /* width: 355px; */
+  width: 100%;
   padding-right: 10px;
 }
 
@@ -35,6 +36,8 @@
   width: 35px;
   border-radius: 50%;
   background-color: white;
+  margin-right: 12px;
+  margin-top: 2px;
 }
 
 .Movies-list-container {
@@ -43,7 +46,8 @@
 
 }
 .Movies-list-view {
-  width: 350px;;
+  /* width: 350px; */
+  width: 95%;
   overflow-x: scroll;
 
 overflow-y: hidden;
