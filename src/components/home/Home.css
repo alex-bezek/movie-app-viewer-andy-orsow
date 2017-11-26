@@ -1,0 +1,68 @@
+.Home {
+  width: 375px;
+  /* height: 100%; */
+}
+
+.Home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 355px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.Home-ProfilePic {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.Home-Categories {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.Home-Category {
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  color:white;
+  text-shadow: 1px 1px rgba(90, 88, 88, 0.294);
+  text-decoration: none;
+}
+
+.Home-Category:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.Home-Category h2,
+.Home-Category p {
+  margin: 0;
+}
+
+.Home-Category p {
+  font-weight: 100;
+  line-height: 35px;
+}
+
+.Home-Movies {
+  background: linear-gradient(to left, #1488cc, #2b32b2);
+}
+
+.Home-Music {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.Home-Podcasts {
+  background: linear-gradient(to left, #c33764, #1d2671);
+}
+
+.Home-Books {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}

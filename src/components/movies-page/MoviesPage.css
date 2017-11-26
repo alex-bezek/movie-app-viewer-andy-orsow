@@ -1,0 +1,83 @@
+.Movies {
+  height: 100%;
+  /* background: linear-gradient(to bottom, #04b5eb, #146fe7); */
+  color: white;
+  padding-left: 10px;
+}
+
+.Movies-Background {
+  background: linear-gradient(to bottom, #04b5eb, #146fe7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  animation: 0.3s ease-out 0s 1 expandHeight;
+}
+
+.Movies-ItemsCount {
+  margin-top: -15px;
+}
+
+.Movies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 355px;
+  padding-right: 10px;
+}
+
+.Movies-CloseButton {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.Movies-list-container {
+  width: 100%;
+  white-space: nowrap;
+
+}
+.Movies-list-view {
+  width: 350px;;
+  overflow-x: scroll;
+
+overflow-y: hidden;
+}
+
+.Movies-thumbnail {
+  display: inline;
+  width: 120px;
+  height: 180px;
+  margin-right: 15px;
+  box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.8);
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
+}
+
+.Movies-thumbnail:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes expandHeight {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
